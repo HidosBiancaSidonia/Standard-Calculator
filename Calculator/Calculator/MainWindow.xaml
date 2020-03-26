@@ -1,0 +1,104 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        StateChanged="Window_StateChanged"
+        Title="Calculator" Height="543" Width="333" Icon="Calculator.png"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"  Activated="Window_Activated" FocusableChanged="Window_FocusableChanged" Closing="Window_Closing"
+        >
+    <Window.CommandBindings>
+        <CommandBinding Command="Cut" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="Copy" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="Paste" CanExecute="CommonCommandBinding_CanExecute" />
+    </Window.CommandBindings>
+    <Border Background="#f2e6ff">
+        <DockPanel >
+            <Menu DockPanel.Dock="Top" Background="#D8D8D8">
+                <MenuItem Header="_File" FontFamily="Bodoni MT" FontSize="16" Foreground="#493B5C" >
+                    <MenuItem  Command="Cut" CommandTarget="{Binding ElementName=txtDocument}" Click="Cut_Click" FontFamily="Bodoni MT" FontSize="14" Foreground="#493B5C"/>
+                    <MenuItem Command="Copy" CommandTarget="{Binding ElementName=txtDocument}" Click="Copy_Click" FontFamily="Bodoni MT" FontSize="14" Foreground="#493B5C"/>
+                    <MenuItem Command="Paste" CommandTarget="{Binding ElementName=txtDocument}" Click="Paste_Click" FontFamily="Bodoni MT" FontSize="14" Foreground="#493B5C"/>
+                    <CheckBox Content="Digit Grouping" Name="digitGrouping" Loaded="digitGrouping_Loaded" FontFamily="Bodoni MT" FontSize="14" Foreground="#493B5C" Unchecked="digitGrouping_Unchecked" Checked="digitGrouping_Checked" />
+                    <Separator />
+                    <MenuItem Header="_Exit" Click='MenuItem_Exit' FontFamily="Bodoni MT" FontSize="14" FontWeight="Bold"/>
+                </MenuItem>
+                <MenuItem Header="_Help" Height="29" FontFamily="Bodoni MT" FontSize="14" Foreground="#493B5C" >
+                    <MenuItem Header="_About"  Foreground="#493B5C">
+                        <MenuItem Header="The programmer who made the application" Click="programator_Click" Foreground="#493B5C"/>
+                        <MenuItem Header="The number of processors in the system" Click="procesoare_Click" Foreground="#493B5C"/>
+                        <MenuItem Header="Operating system version" Click="versiuneSO_Click" Foreground="#493B5C" />
+                        <Hyperlink  NavigateUri="https://github.com/HidosBiancaSidonia" RequestNavigate="Hyperlink_RequestNavigate" Foreground="#493B5C">Link to the GitHub of the programmer</Hyperlink>
+
+                    </MenuItem>
+
+                </MenuItem>
+            </Menu>
+            <StackPanel Height="372" VerticalAlignment="Bottom"/>
+            <Grid Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55*" />
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="32*"/>
+                    <RowDefinition Height="23*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="55*"/>
+                </Grid.RowDefinitions>
+                <!--M.Buttons-->
+                <Button x:Name="btnMS" Grid.Row="1" Grid.Column="3" Content="MS" FontSize="15" Background="#FFC8C8C8" Foreground="#493B5C" HorizontalAlignment="Right" Width="40" Margin="0,54.333,0,0.333" Grid.RowSpan="2" Click="btnMS_Click"  />
+                <Button x:Name="btnMC" Grid.Row="1"  Content="MC" FontSize="15" Background="#FFC8C8C8" Foreground="#493B5C" HorizontalAlignment="Left" Width="40" Margin="0,54.333,0,0.333" Grid.RowSpan="2" IsEnabled="False" Click="btnMC_Click"  />
+                <Button x:Name="btnMR" Grid.Row="1"  Content="MR" FontSize="15" Background="#FFC8C8C8" Foreground="#493B5C" Margin="56,54.333,0,0.333" Grid.RowSpan="2" Grid.ColumnSpan="2"  Width="40" Height="28" HorizontalAlignment="Left" IsEnabled="False" Click="btnMR_Click"  />
+                <Button x:Name="btnMplus" Grid.Row="1" Content="M+" FontSize="15" Background="#FFC8C8C8" Foreground="#493B5C" Height="28" VerticalAlignment="Bottom" Margin="57.667,0,0,0.333" Grid.RowSpan="2" HorizontalAlignment="Left" Width="40" Grid.Column="1" Grid.ColumnSpan="2" Click="btnMplus_Click" />
+                <Button x:Name="btncMminus" Grid.Row="1" Grid.Column="2" Width="40" HorizontalAlignment="Left" Content="M-" FontSize="15" Background="#FFC8C8C8" Foreground="#493B5C" Margin="57.333,54.333,0,0.333" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="28" Click="btncMminus_Click"  />
+
+                <!--C.Buttons-->
+                <Button x:Name="btnCE" Grid.Row="2" Grid.Column="2" FontWeight="Bold" Content="CE" FontSize="18" Background="#505050" Foreground="White" Click="btnCE_Click" Margin="0.333,27.667,0.333,0" Grid.RowSpan="3"  />
+                <Button x:Name="btnC"  Grid.Row="2" FontWeight="Bold" Content="C" FontSize="18" Background="#505050" Foreground="White" Click="btnC_Click" Grid.ColumnSpan="3" Margin="77,27.667,76.333,0" Grid.RowSpan="3"  />
+                <Button x:Name="btnDEL" Grid.Row="2" Grid.Column="2" FontWeight="Bold" Content="←" FontSize="26" Background="#493B5C" Foreground="White" Click="btnDEL_Click" Grid.ColumnSpan="2" Height="55" Margin="76.333,0,0,0" Grid.RowSpan="3" VerticalAlignment="Bottom"  />
+
+
+                <!--Numbers-->
+                <Button x:Name="btn7" Grid.Row="6" Grid.Column="0" FontWeight="Bold"  FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Margin="0,0.333,0.333,0.334">7</Button>
+                <Button x:Name="btn8" Grid.Row="6" FontWeight="Bold" FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Grid.ColumnSpan="3" Margin="77,0.333,76.333,0.334">8</Button>
+                <Button x:Name="btn9" Grid.Row="6" Grid.Column="2" FontWeight="Bold"  FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Margin="0.333,0.333,0.333,0.334">9</Button>
+                <Button x:Name="btn4" Grid.Row="6" Grid.Column="0" FontWeight="Bold"  FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Margin="0,54.333,0.333,0" Grid.RowSpan="2">4</Button>
+                <Button x:Name="btn5" Grid.Row="6" FontWeight="Bold" FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Grid.ColumnSpan="3" Margin="77,54.333,76.333,0" Grid.RowSpan="2">5</Button>
+                <Button x:Name="btn1" Grid.Row="8" Grid.Column="0" FontWeight="Bold" FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Margin="0,0,0.333,54.334" Grid.RowSpan="2">1</Button>
+                <Button x:Name="btn6" Grid.Row="6" Grid.Column="2" FontWeight="Bold"  FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Margin="0.333,54.333,0.333,0" Grid.RowSpan="2">6</Button>
+                <Button x:Name="btn2" Grid.Row="8" FontWeight="Bold" FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Grid.ColumnSpan="3" Margin="77,0,76.333,54.334" Grid.RowSpan="2">2</Button>
+                <Button x:Name="btn3" Grid.Row="8" Grid.Column="2" FontWeight="Bold"  FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Margin="0.333,0,0.333,54.334" Grid.RowSpan="2">3</Button>
+                <Button x:Name="btn0" Grid.Row="9" FontWeight="Bold"  FontSize="20" Background="#1F1F1F" Foreground="White" Click="numbers_Only" FontFamily="Symbol" Grid.ColumnSpan="3" Margin="77,0.333,76.333,0.334">0</Button>
+
+                <!--Operator-->
+                <Button x:Name="btnInmultire" Grid.Row="6" Grid.Column="2" FontWeight="Bold" Content="*" FontSize="18" Background="#505050" Foreground="White" Click="operator_Click" Grid.ColumnSpan="2" Margin="76.333,0.333,0,0.334"/>
+                <Button x:Name="btnMinus" Grid.Row="6" Grid.Column="2" FontWeight="Bold" Content="-" FontSize="18" Background="#505050" Foreground="White" Click="operator_Click" Grid.ColumnSpan="2" Margin="76.333,54.333,0,0" Grid.RowSpan="2"/>
+                <Button x:Name="btnPlus" Grid.Row="8" Grid.Column="2" FontWeight="Bold" Content="+" FontSize="18" Background="#505050" Foreground="White" Click="operator_Click" Grid.ColumnSpan="2" Margin="76.333,0,0,54.334" Grid.RowSpan="2"/>
+                <Button x:Name="btnEgal" Grid.Row="9" Grid.Column="2" Background="#493B5C" FontWeight="Bold" Foreground="White" Content="=" FontSize="18" Click="btnEgal_Click" Grid.ColumnSpan="2" Margin="76.333,0.333,0,0.334" />
+                <Button x:Name="btnDivide" Grid.Row="5" Grid.Column="2" FontWeight="Bold" Content="/" FontSize="18" Background="#505050" Foreground="White"  Click="operator_Click" Grid.ColumnSpan="2" Margin="76.333,0,0,54.334" Grid.RowSpan="2"/>
+                <Button x:Name="btnPunct" Grid.Row="9" Grid.Column="2" FontWeight="Bold" Content="." FontSize="18" Background="#1F1F1F" Foreground="White" Click="numbers_Only" Margin="0.333,0.333,0.333,0.334"/>
+                <Button x:Name="btnXpatrat" Grid.Row="5" FontWeight="Bold" Content="x²" FontSize="18" Background="#505050" Foreground="White" Click="btnXpatrat_Click" Grid.ColumnSpan="3" Margin="77,0,76.333,54.334" Grid.RowSpan="2"   />
+                <Button x:Name="btnProcent" Grid.Row="2" Grid.Column="0" FontWeight="Bold" Content="٪" FontSize="24" Background="#505050" Foreground="White" Click="btnProcent_Click" Margin="0,27.667,0.333,0" Grid.RowSpan="3"  />
+                <Button x:Name="btnPlusMinus" Grid.Row="9" Grid.Column="0" FontWeight="Bold" Content="+/-" FontSize="18" Background="#1F1F1F" Foreground="White" Click="btnPlusMinus_Click" Margin="0,0.333,0.333,0.334" />
+                <Button x:Name="btnSQRT" Grid.Row="5" Grid.Column="2" FontWeight="Bold" Content="√" FontSize="18" Background="#505050" Foreground="White" Click="btnSQRT_Click" Margin="0.333,0,0.333,54.334" Grid.RowSpan="2" />
+                <Button x:Name="btnFractie"  Grid.Row="5" Grid.Column="0" FontWeight="Bold" Content="¹⁄ₓ" FontSize="21" Background="#505050" Foreground="White" Click="btnFractie_Click" Margin="0,0,0.333,54.334" Grid.RowSpan="2" />
+
+
+                <TextBox  Name="textBox1" Background="#f2e6ff" IsReadOnly="True" TextAlignment="Right" Foreground="#493B5C"  VerticalAlignment="Bottom" FontSize="30" BorderThickness="0" Grid.Row="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Text="0" Height="74" Margin="0,0,0,10.333" HorizontalAlignment="Left" Width="293" RenderTransformOrigin="0.49,1.384" PreviewKeyDown="textBox1_PreviewKeyDown" TextInput="textBox1_TextInput" />
+
+            </Grid>
+        </DockPanel>
+    </Border>
+</Window>

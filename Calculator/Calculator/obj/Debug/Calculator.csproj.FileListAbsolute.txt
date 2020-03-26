@@ -1,0 +1,70 @@
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\App.g.cs
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.lref
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\MainWindow.baml
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\Calculator.g.resources
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Asus\Desktop\FACULTATE\C#\Tema_1_Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\Calc\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Asus\Desktop\Calc\Calculator\bin\Debug\Calculator.exe
+C:\Users\Asus\Desktop\Calc\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\App.g.cs
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\Calculator_MarkupCompile.lref
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\MainWindow.baml
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\Calculator.g.resources
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\Calculator.exe
+C:\Users\Asus\Desktop\Calc\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\App.g.cs
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.lref
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\MainWindow.baml
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\Calculator.g.resources
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Asus\Desktop\Save\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\App.g.cs
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.lref
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\MainWindow.baml
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.g.resources
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Asus\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\App.g.cs
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.lref
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\MainWindow.baml
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\Calculator.g.resources
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Asus\Desktop\Calculator-Hidoș Bianca -Sidonai Grupa 381\Calculator\Calculator\obj\Debug\Calculator.pdb
